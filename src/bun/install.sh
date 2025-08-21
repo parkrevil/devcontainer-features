@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e
 
-BUN_VERSION="1.2.20"
-echo "Installing Bun..."
+BUN_VERSION=${FEATURE_VERSION}
+
+echo "Installing Bun version $BUN_VERSION"
 
 export BUN_INSTALL=/usr/local
 

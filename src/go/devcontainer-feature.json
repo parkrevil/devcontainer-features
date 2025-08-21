@@ -1,9 +1,16 @@
 {
   "id": "go",
   "name": "Go",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Installs Go language and tools",
   "init": true,
+  "options": {
+    "version": {
+      "type": "string",
+      "description": "Specify Go version to install",
+      "default": "1.25.0"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -21,5 +28,8 @@
     "GOROOT": "/usr/local/go",
     "GOPATH": "/home/vscode/go",
     "PATH": "/usr/local/go/bin:/home/vscode/go/bin:${PATH}"
-  }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
 }

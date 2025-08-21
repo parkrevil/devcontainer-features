@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-GO_VERSION=1.25.0
+GO_VERSION=${FEATURE_VERSION}
 
-echo "Installing Go..."
+echo "Installing Go version $GO_VERSION"
 
 curl -LO https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
 tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz

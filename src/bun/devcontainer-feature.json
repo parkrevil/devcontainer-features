@@ -1,9 +1,16 @@
 {
   "id": "bun",
   "name": "Bun",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Installs Bun language",
   "init": true,
+  "options": {
+    "version": {
+      "type": "string",
+      "description": "Specify Bun version to install",
+      "default": "1.2.2"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -13,5 +20,8 @@
         "bun.runtime": "/usr/local/bin"
       }
     }
-  }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ]
 }

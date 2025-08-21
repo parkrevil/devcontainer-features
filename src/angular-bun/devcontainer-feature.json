@@ -1,0 +1,24 @@
+{
+  "id": "angular-bun",
+  "name": "Angular Bun",
+  "version": "1.0.0",
+  "description": "Installs Angular Framework using package manager Bun",
+  "init": true,
+  "options": {
+    "version": {
+      "type": "string",
+      "description": "Specify Angular CLI version to install",
+      "default": "^20"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Angular.ng-template"
+      ]
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/parkrevil/devcontainer-features/bun"
+  ]
+}
