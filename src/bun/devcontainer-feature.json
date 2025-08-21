@@ -1,7 +1,7 @@
 {
   "id": "bun",
   "name": "Bun",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Installs Bun language",
   "init": true,
   "options": {
@@ -17,13 +17,13 @@
         "oven.bun-vscode"
       ],
       "settings": {
-        "bun.runtime": "/usr/local/bin"
+        "bun.runtime": "/home/${remoteUser}/.bun/bin"
       }
     }
   },
   "containerEnv": {
-    "BUN_INSTALL": "/usr/local",
-    "PATH": "/usr/local/bin:${PATH}"
+    "BUN_INSTALL": "/home/${remoteUser}/.bun",
+    "PATH": "/home/${remoteUser}/.bun/bin:$PATH"
   },
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils"
