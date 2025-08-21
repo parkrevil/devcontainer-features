@@ -3,7 +3,7 @@ set -e
 
 source dev-container-features-test-lib
 
-check "bunx --bun ng version" ng version
-check "bunx --bun ng location" which ng
+check "ng version" bunx ng version
+check "ng location" which ng
 
 reportResults

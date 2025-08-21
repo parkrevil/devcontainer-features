@@ -8,4 +8,4 @@ echo "Installing Angular CLI version $ANGULAR_VERSION using Bun"
 bun install -g @angular/cli@"$ANGULAR_VERSION"
 
 echo "Angular CLI installed successfully"
-echo "ng version: $(ng version)"
+echo "bunx ng version: $(ng version)"
