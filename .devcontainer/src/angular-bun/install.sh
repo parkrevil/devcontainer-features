@@ -2,8 +2,8 @@
 
 set -e
 
-ANGULAR_VERSION=${VERSION}
+ANGULAR_VERSION=${VERSION:-"^20"}
 
 echo "Installing Angular CLI version $ANGULAR_VERSION using Bun"
 
-bun install -g @angular/cli@"$ANGULAR_VERSION"
+bun add -g @angular/cli@"$ANGULAR_VERSION"

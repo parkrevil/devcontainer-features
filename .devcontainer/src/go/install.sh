@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-GO_VERSION=${VERSION}
+GO_VERSION=${VERSION:-"1.25.0"}
 
 echo "Installing Go version $GO_VERSION"
 

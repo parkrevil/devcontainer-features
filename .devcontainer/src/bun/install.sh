@@ -1,7 +1,8 @@
 #!/bin/bash
+
 set -e
 
-BUN_VERSION=${VERSION}
+BUN_VERSION=${VERSION:-"1.2.20"}
 
 echo "Installing Bun version $BUN_VERSION"
 
