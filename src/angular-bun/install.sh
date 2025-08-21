@@ -2,8 +2,8 @@
 
 set -e
 
-ANGULAR_VERSION=${FEATURE_VERSION}
+ANGULAR_VERSION=${VERSION}
 
-echo "Installing Angular CLI version $ANGULAR_VERSION using $PACKAGE_MANAGER"
+echo "Installing Angular CLI version $ANGULAR_VERSION using Bun"
 
 bun install -g @angular/cli@"$ANGULAR_VERSION"

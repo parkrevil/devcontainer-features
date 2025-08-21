@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-BUN_VERSION=${FEATURE_VERSION}
+BUN_VERSION=${VERSION}
 
 echo "Installing Bun version $BUN_VERSION"
 

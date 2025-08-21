@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-GO_VERSION=${FEATURE_VERSION}
+GO_VERSION=${VERSION}
 
 echo "Installing Go version $GO_VERSION"
 
