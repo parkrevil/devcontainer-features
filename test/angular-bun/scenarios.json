@@ -1,10 +1,8 @@
 {
-  "test": {
+  "angular-bun_test": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
-      "bun": {
-        "version": "1.2.20"
-      },
+      "ghcr.io/parkrevil/devcontainer-features/bun:latest": {},
       "angular-bun": {
         "version": "^20"
       }

@@ -1,5 +1,5 @@
 {
-  "test": {
+  "go_test": {
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
       "go": {
