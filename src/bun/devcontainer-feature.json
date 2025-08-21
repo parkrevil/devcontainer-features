@@ -8,7 +8,7 @@
     "version": {
       "type": "string",
       "description": "Specify Bun version to install",
-      "default": "1.2.2"
+      "default": "1.2.20"
     }
   },
   "customizations": {
