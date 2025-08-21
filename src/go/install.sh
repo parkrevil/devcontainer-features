@@ -29,3 +29,5 @@ for tool in "${GO_TOOLS[@]}"; do
         exit 1
     fi
 done
+
+echo "go version $(go --version) installed"

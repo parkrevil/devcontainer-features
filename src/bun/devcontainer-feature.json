@@ -1,7 +1,7 @@
 {
   "id": "bun",
   "name": "Bun",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Installs Bun language",
   "init": true,
   "options": {
@@ -20,6 +20,10 @@
         "bun.runtime": "/usr/local/bin"
       }
     }
+  },
+  "containerEnv": {
+    "BUN_INSTALL": "/usr/local",
+    "PATH": "/usr/local/bin:${PATH}"
   },
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils"

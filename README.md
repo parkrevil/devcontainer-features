@@ -1,15 +1,17 @@
 # Devcontainer Features
 
-## Features
+## Usage
+Add to the features property in devcontainer.json to use.
+
 ### Bun
-#### Usage
 ```jsonc
 {
   ...
   "features": {
     "ghcr.io/parkrevil/devcontainer-features/bun:latest": {
-      // Specify a version
-      "version": "20.0.0"
+      // Specify a version (Optional)
+      // Default 1.2.20
+      "version": "1.1.1"
     }
   }
   ...
@@ -18,14 +20,14 @@
 
 ### Go
 
-#### Usage
 ```jsonc
 {
   ...
   "features": {
     "ghcr.io/parkrevil/devcontainer-features/go:latest": {
-      // Specify a version
-      "version": "1.25.0"
+      // Specify a version (Optional)
+      // Default 1.25.0
+      "version": "1.21.2"
     }
   }
   ...
@@ -34,16 +36,24 @@
 
 ### Angular Bun
 
-#### Usage
 ```jsonc
 {
   ...
   "features": {
     "ghcr.io/parkrevil/devcontainer-features/angular-bun:latest": {
-      "version": "^20"
-      // or "version": "20.0.0"
+      // 20.0.0 or ^20 (Optional)
+      // Default ^20
+      "version": "^19"
     }
   }
   ...
 }
+```
+
+## Development & Testing
+
+Development and testing should be done inside a Devcontainer.
+
+```bash
+devcontainer features test
 ```

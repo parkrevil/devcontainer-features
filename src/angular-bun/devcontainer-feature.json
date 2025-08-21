@@ -1,7 +1,7 @@
 {
   "id": "angular-bun",
   "name": "Angular Bun",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Installs Angular Framework using package manager Bun",
   "init": true,
   "options": {
@@ -17,6 +17,9 @@
         "Angular.ng-template"
       ]
     }
+  },
+  "containerEnv": {
+    "PATH": "/usr/local/bin:${PATH}"
   },
   "installsAfter": [
     "ghcr.io/parkrevil/devcontainer-features/bun"

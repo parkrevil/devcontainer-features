@@ -1,0 +1,10 @@
+{
+  "test": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "go": {
+        "version": "1.25.0"
+      }
+    }
+  }
+}
