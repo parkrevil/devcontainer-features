@@ -34,22 +34,6 @@ Add to the features property in devcontainer.json to use.
 }
 ```
 
-### Angular Bun
-
-```jsonc
-{
-  ...
-  "features": {
-    "ghcr.io/parkrevil/devcontainer-features/angular-bun:latest": {
-      // 20.0.0 or ^20 (Optional)
-      // Default ^20
-      "version": "^19"
-    }
-  }
-  ...
-}
-```
-
 ## Development & Testing
 
 Development and testing should be done inside a Devcontainer.
